@@ -6,6 +6,8 @@ Cuda 7.5 (for GPU)
 nltk python package
 
 ## Introduction
+For full information, see the paper:  
+SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient (http://arxiv.org/abs/1609.05473)
 We provide example codes to repeat the synthetic data experiments with oracle evaluation mechanisms.
 Move to MLE SeqGAN folder and run
 ```
