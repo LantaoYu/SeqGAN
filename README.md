@@ -7,9 +7,9 @@ nltk python package
 
 ## Introduction
 For full information, see the paper:  
-SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient (http://arxiv.org/abs/1609.05473)
+SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient (http://arxiv.org/abs/1609.05473)  
 We provide example codes to repeat the synthetic data experiments with oracle evaluation mechanisms.
-Move to MLE SeqGAN folder and run
+Move to MLE_SeqGAN folder and run
 ```
 python pretrain experiment.py
 ```
@@ -25,7 +25,7 @@ python pg bleu.py
 ```
 will start policy gradient algorithm with BLEU score (PG-BLEU), where the final reward for MC search comes  
 from a predefined score function instead of a CNN classifier.
-Finally, move to schedule sampling folder and run
+Finally, move to schedule_sampling folder and run
 ```
 python schedule sampling.py
 ```
