@@ -7,6 +7,7 @@ nltk python package
 
 ## Introduction
 ![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/seqgan.png)
+
 The illustration of SeqGAN. Left: D is trained over the real data and the generated data by G. Right: G is trained by policy gradient where the final reward signal is provided by D and is passed back to the intermediate action value via Monte Carlo search.  
 
 For full information, see the paper:  
