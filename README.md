@@ -6,7 +6,7 @@ Cuda 7.5 (for GPU)
 nltk python package
 
 ## Introduction
-![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/seqgan.pdf)
+![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/seqgan.png)
 The illustration of SeqGAN. Left: D is trained over the real data and the generated data by G. Right: G is trained by policy gradient where the final reward signal is provided by D and is passed back to the intermediate action value via Monte Carlo search.  
 
 For full information, see the paper:  
@@ -38,4 +38,4 @@ will launch SS algorithm with default parameters.
 Note: this code is based on the [previous work by ofirnachum](https://github.com/ofirnachum/sequence_gan). Many thanks to [ofirnachum](https://github.com/ofirnachum).
 
 After running the experiments, the learning curve should be like this:  
-![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/learning_curve.pdf)
+![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/lc.png)
