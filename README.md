@@ -39,4 +39,4 @@ will launch SS algorithm with default parameters.
 Note: this code is based on the [previous work by ofirnachum](https://github.com/ofirnachum/sequence_gan). Many thanks to [ofirnachum](https://github.com/ofirnachum).
 
 After running the experiments, the learning curve should be like this:  
-![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/lc.png =3x5)
+![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/lc.png)
