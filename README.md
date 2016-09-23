@@ -6,7 +6,7 @@
 * nltk python package
 
 ## Introduction
-Apply Generative Adversarial Nets to generate sequences of discrete tokens.
+Apply Generative Adversarial Nets to generating sequences of discrete tokens.
 
 ![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/seqgan.png)
 
