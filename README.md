@@ -1,11 +1,13 @@
 # SeqGAN
 
 ## Requirements: 
-Tensorflow r0.10  
-Cuda 7.5 (for GPU)  
-nltk python package
+*Tensorflow r0.10  
+*Cuda 7.5 (for GPU)  
+*nltk python package
 
 ## Introduction
+Apply Generative Adversarial Nets to generate sequences of discrete tokens.
+
 ![](https://github.com/LantaoYu/SeqGAN/blob/master/figures/seqgan.png)
 
 The illustration of SeqGAN. Left: D is trained over the real data and the generated data by G. Right: G is trained by policy gradient where the final reward signal is provided by D and is passed back to the intermediate action value via Monte Carlo search.  
