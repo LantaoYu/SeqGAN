@@ -1,9 +1,9 @@
 # SeqGAN
 
 ## Requirements: 
-*Tensorflow r0.10  
-*Cuda 7.5 (for GPU)  
-*nltk python package
+* Tensorflow r0.10  
+* Cuda 7.5 (for GPU)  
+* nltk python package
 
 ## Introduction
 Apply Generative Adversarial Nets to generate sequences of discrete tokens.
