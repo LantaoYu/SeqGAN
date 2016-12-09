@@ -12,7 +12,7 @@ Apply Generative Adversarial Nets to generating sequences of discrete tokens.
 
 The illustration of SeqGAN. Left: D is trained over the real data and the generated data by G. Right: G is trained by policy gradient where the final reward signal is provided by D and is passed back to the intermediate action value via Monte Carlo search.  
 
-The research paper [SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient](http://arxiv.org/abs/1609.05473) has been accepted at the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17). The final version of the paper will be updated soon.
+The research paper [SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient](http://arxiv.org/abs/1609.05473) has been accepted at the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17).
 
 We provide example codes to repeat the synthetic data experiments with oracle evaluation mechanisms.
 Move to MLE_SeqGAN folder and run
