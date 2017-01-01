@@ -150,7 +150,7 @@ def main():
     # config.gpu_options.per_process_gpu_memory_fraction = 0.5
     config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer)
 
     generate_samples(sess, target_lstm, 64, 10000, positive_file)
     gen_data_loader.create_batches(positive_file)

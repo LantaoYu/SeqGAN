@@ -1,8 +1,8 @@
 # SeqGAN
 
 ## Requirements: 
-* Tensorflow r0.10  
-* Cuda 7.5 (for GPU)  
+* Tensorflow
+* Cuda
 * nltk python package
 
 ## Introduction
