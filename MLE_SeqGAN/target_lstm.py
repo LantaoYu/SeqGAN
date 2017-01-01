@@ -53,7 +53,7 @@ class TARGET_LSTM(object):
             gen_x = gen_x.write(i, next_token)  # indices, batch_size
             return i + 1, x_tp1, h_t, gen_o, gen_x
 
-        _, _, _, self.gen_o, self.gen_x = control_flow_ops.While(
+        _, _, _, self.gen_o, self.gen_x = control_flow_ops.while_loop(
             cond=lambda i, _1, _2, _3, _4: i < self.sequence_length,
             body=_g_recurrence,
             loop_vars=(tf.constant(0, dtype=tf.int32),
@@ -78,7 +78,7 @@ class TARGET_LSTM(object):
             x_tp1 = ta_emb_x.read(i)
             return i + 1, x_tp1, h_t, g_predictions
 
-        _, _, _, self.g_predictions = control_flow_ops.While(
+        _, _, _, self.g_predictions = control_flow_ops.while_loop(
             cond=lambda i, _1, _2, _3: i < self.sequence_length,
             body=_pretrain_recurrence,
             loop_vars=(tf.constant(0, dtype=tf.int32),

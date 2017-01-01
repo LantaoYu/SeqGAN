@@ -120,7 +120,7 @@ def main():
     config = tf.ConfigProto()
     config.gpu_options.allow_growth = True
     sess = tf.Session(config=config)
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer)
 
     generate_samples(sess, target_lstm, 64, 10000, positive_file)
     ################################################################
