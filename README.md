@@ -21,7 +21,7 @@ $ python sequence_gan.py
 ```
 The experiment has two stages. In the first stage, use the positive data provided by the oracle and Maximum Likelihood Estimation to perform supervise learning. In the second stage, use adversarial training to improve the generator.
 
-After running the experiments, you could get the negative log-likelihodd performance printed in the console like::  
+After running the experiments, you could get the negative log-likelihodd performance saved in `save/experiment-log.txt` like:
 ```
 pre-training...
 epoch:	0	nll:	10.1716
