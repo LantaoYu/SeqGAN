@@ -115,7 +115,7 @@ def main():
             likelihood_data_loader.create_batches(eval_file)
             test_loss = target_loss(sess, target_lstm, likelihood_data_loader)
             print 'pre-train epoch ', epoch, 'test_loss ', test_loss
-            buffer = str(epoch) + ' ' + str(test_loss) + '\n'
+            buffer = 'epoch:\t'+ str(epoch) + '\tnll:\t' + str(test_loss) + '\n'
             log.write(buffer)
 
     print 'Start pre-training discriminator...'
@@ -152,7 +152,7 @@ def main():
             generate_samples(sess, generator, BATCH_SIZE, generated_num, eval_file)
             likelihood_data_loader.create_batches(eval_file)
             test_loss = target_loss(sess, target_lstm, likelihood_data_loader)
-            buffer = str(total_batch) + ' ' + str(test_loss) + '\n'
+            buffer = 'epoch:\t' + str(total_batch) + '\tnll:\t' + str(test_loss) + '\n'
             print 'total_batch: ', total_batch, 'test_loss: ', test_loss
             log.write(buffer)
 
