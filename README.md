@@ -19,7 +19,9 @@ To run the experiment with default parameters:
 ```
 $ python sequence_gan.py
 ```
-The experiment has two stages. In the first stage, use the positive data provided by the oracle and Maximum Likelihood Estimation to perform supervise learning. In the second stage, use adversarial training to improve the generator.
+You can change the all the parameters in `sequence_gan.py`.
+
+The experiment has two stages. In the first stage, use the positive data provided by the oracle model and Maximum Likelihood Estimation to perform supervise learning. In the second stage, use adversarial training to improve the generator.
 
 After running the experiments, you could get the negative log-likelihodd performance saved in `save/experiment-log.txt` like:
 ```
