@@ -77,7 +77,8 @@ class ROLLOUT(object):
     def get_reward(self, sess, input_x, rollout_num, discriminator):
         rewards = []
         for i in range(rollout_num):
-            for given_num in range(1, 20):
+            # given_num between 1 to sequence_length - 1 for a part completed sentence
+            for given_num in range(1, self.sequence_length ):
                 feed = {self.x: input_x, self.given_num: given_num}
                 samples = sess.run(self.gen_x, feed)
                 feed = {discriminator.input_x: samples, discriminator.dropout_keep_prob: 1.0}
@@ -95,7 +96,8 @@ class ROLLOUT(object):
             if i == 0:
                 rewards.append(ypred)
             else:
-                rewards[19] += ypred
+                # completed sentence reward
+                rewards[self.sequence_length - 1] += ypred
 
         rewards = np.transpose(np.array(rewards)) / (1.0 * rollout_num)  # batch_size x seq_length
         return rewards
